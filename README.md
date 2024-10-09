@@ -1,6 +1,6 @@
 # Data-Science-Portofolio
 
-![histogram](images/histogram.png)
+![histogram](images/data.wepg)
 
 # Heading 1
 
