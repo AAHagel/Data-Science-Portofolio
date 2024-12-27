@@ -9,12 +9,7 @@
      <h1>Gym Performance Insights</h1>
 </div>
 
-![data](images/gym.jpg)
-
-
-|:------------------------:|
-<img src="![data](images/gym.jpg)" alt="Gym Image" width="200"/>
-
+                                                   ![data](images/gym.jpg)
 
 ## Heading 2
 
