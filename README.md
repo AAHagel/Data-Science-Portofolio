@@ -9,7 +9,7 @@
     <br><br>
 </div>
 
-![data](images/gym.jpg)
+![data](images/gym2.jpg)
 
 ## Heading 2
 
