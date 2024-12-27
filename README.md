@@ -6,6 +6,7 @@
 <br>
 <div align="center">
      <h1>Gym Performance Insights</h1>
+    <br><br>
 </div>
 
 ![data](images/gym.jpg)
