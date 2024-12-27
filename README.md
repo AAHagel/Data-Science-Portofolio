@@ -10,12 +10,12 @@
 </div>
 
 <p align="center">
-  <img src="![data](images/gym.jpg) " alt="Centered Image" />
+  <img src="![data](images/gym.jpg) " />
 </p>
 
-<div align="center">
+
    ![data](images/gym.jpg) 
-</div>
+
  
 
 ## Heading 2
