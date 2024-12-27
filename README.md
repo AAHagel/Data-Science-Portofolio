@@ -12,7 +12,7 @@
 ![data](images/gym.jpg)
 
 <div align="center">
-  <img src=![data](images/gym.jpg) />
+  <img src="![data](images/gym.jpg)" />
 </div>
 
 
