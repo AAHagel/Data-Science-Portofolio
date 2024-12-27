@@ -10,13 +10,9 @@
 </div>
 
 <p align="center">
-  <img src="![data](images/gym.jpg) " />
+  ![data](images/gym.jpg)
 </p>
 
-
-   ![data](images/gym.jpg) 
-
- 
 
 ## Heading 2
 
