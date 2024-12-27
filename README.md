@@ -10,7 +10,7 @@
 </div>
 
 <div align="center">
-![data](images/gym.jpg)
+    ![data](images/gym.jpg)
 </div>
 
 ## Heading 2
