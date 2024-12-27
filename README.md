@@ -99,6 +99,21 @@ the results have considerably improved with an R2  score of 85.40%, indicating t
 <br>
 <p> A variety of charts for visualising the model's accuracy and for further analysis have been created in Looker Studio to make it easy to understand the data and extract valuable insights. Visualisations like age distribution (Figure C) and member distribution by workout type and gender (Figure D) help uncover key insights about gym members and their preferences. The predicted vs actual calories burned (Figure E) chart, compares the model’s predictions compared to the actual data. This helps to assess how well the model performs. 
 </p>
+
+![data](images/FigureC.JPG)
+<div align="center">
+    <h4>Figure C: Age Distribution</h4>
+</div>
+
+![data](images/FigureD.JPG)
+<div align="center">
+    <h4>Figure D:  Calories Burned Calculation based on the Linear Regression Model</h4>
+</div>
+
+![data](images/FigureE.JPG)
+<div align="center">
+    <h4>Figure E:  Calories Burned Calculation based on the Linear Regression Model</h4>
+</div>
 <br>
 <p> Each visualisation is designed to be clear and simple to understand, ensuring that even the users with minimal technical knowledge can interpret the data easily. Additionally, interactive filters have been added, allowing users to customise views and explore specific insights based on different variables such as the workout type. These filters offer a more user-tailored experience, allowing them to deep dive into the data according to their needs.
 </p>
