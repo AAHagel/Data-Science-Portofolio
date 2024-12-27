@@ -1,4 +1,6 @@
-# Data-Science-Portofolio
+<p style="text-align: center;">
+    # Data-Science-Portofolio
+</p>
 
 
 # Gym Performance Insights
