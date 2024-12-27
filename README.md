@@ -1,6 +1,6 @@
 # Data-Science-Portofolio
 
- ![data](images/gym equipment.avif)
+ ![data](images/gym.jpg)
 
 # Gym Performance Insights
 
