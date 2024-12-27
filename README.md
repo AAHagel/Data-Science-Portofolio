@@ -9,9 +9,8 @@
      <h1>Gym Performance Insights</h1>
 </div>
 
-<p align="center">
-  ![data](images/gym.jpg)
-</p>
+![data](images/gym.jpg)
+
 
 
 ## Heading 2
