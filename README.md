@@ -8,7 +8,6 @@
      <h1>Gym Performance Insights</h1>
 </div>
 <br>
-![data](images/gym.jpg)
 <br>
 
 
