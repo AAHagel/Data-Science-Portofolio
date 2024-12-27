@@ -1,9 +1,8 @@
 # Data-Science-Portofolio
 
- ![histogram](images/data.webp)
-[Publication](https://www.mdpi.com/1424-8220/22/8/3048) 
+ ![data](images/data.webp)
 
-# Heading 1
+# Gym Performance Insights
 
 ## Heading 2
 
