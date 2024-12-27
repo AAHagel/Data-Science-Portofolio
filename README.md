@@ -34,7 +34,7 @@
 <br>
 <br>
 
-<p>In this project, the flow of data is streamlined and it involves a small number of tools used to achieve the desired results (Figure A). The dataset used is a public source which was downloaded from Kaggle and it has 973 records which contain data about individuals' gender,  weight, age, calories burned, and session duration. This file is used as a source for creating a table in BigQuery (BQ). BQ is the main platform used for tabular data storage, cleaning, and analysis. It can process large datasets efficiently and cost-effectively, with active storage at $0.02 per GB per month and querying at $6.25 per TiB. Its powerful SQL functions make it easy to prepare the data, helping to spot NULL values  (e.g., IS NULL, IF NULL) and duplicates at scale (e.g., DISTINCT, ROW_NUMBER), ensuring consistency as the dataset grows.
+<p>In this project, the flow of data is streamlined and it involves a small number of tools used to achieve the desired results (Figure A). The dataset used is a public source which was downloaded from Kaggle and it has 973 records which contain data about individuals' gender,  weight, age, calories burned, and session duration. This file is used as a source for creating a table in BigQuery (BQ). BQ is the main platform used for tabular data storage, cleaning, and analysis. It can process large datasets efficiently and cost-effectively, with active storage at $0.02 per GB per month and querying at $6.25 per TiB. Its powerful SQL functions make it easy to prepare the data, helping to spot NULL values  (e.g., IS NULL, IF NULL) and duplicates at scale (e.g., DISTINCT, ROW_NUMBER), ensuring consistency as the dataset grows.<br><br>
 </p>
 
 ![data](images/FigureA.JPG)
@@ -85,34 +85,34 @@ Finally, the transformed data is checked to ensure it is now clean and ready for
 <p>To improve the model’s accuracy even more, additional factors, such as session duration ( which makes sense because longer workouts mean prolonged effort and, as a consequence, calories burned) and weight ( which makes sense because it is directly linked to calories burned) were included. The linear regression model was recreated with the new variables and 
 the results have considerably improved with an R2  score of 85.40%, indicating that the model is very good at predicting based on the added variables.
 </p><br>
-<p>With confirmation that the model performs well and based on the calculation for the calories burned (Figure B), the relationship coefficients can be analysed to understand how each factor influences the calories burned. Now that the model can predict the number of calories burned and is based on the relationship coefficients,  it is easy to estimate, for example, the session duration based on the target calorie burn.
+<p>With confirmation that the model performs well and based on the calculation for the calories burned (Figure B), the relationship coefficients can be analysed to understand how each factor influences the calories burned. Now that the model can predict the number of calories burned and is based on the relationship coefficients,  it is easy to estimate, for example, the session duration based on the target calorie burn.<br><br>
 </p>
 
 ![data](images/FigureB.JPG)
 <div align="center">
-    <h4>Figure B:  Calories Burned Calculation based on the Linear Regression Model</h4>
+    <h4>Figure B: Calories Burned Calculation based on the Linear Regression Model</h4>
 </div>
 <br><br>
 
 <h2>Data Visualisation & Dashboards</h2>  
 <br>
 <br>
-<p> A variety of charts for visualising the model's accuracy and for further analysis have been created in Looker Studio to make it easy to understand the data and extract valuable insights. Visualisations like age distribution (Figure C) and member distribution by workout type and gender (Figure D) help uncover key insights about gym members and their preferences. The predicted vs actual calories burned (Figure E) chart, compares the model’s predictions compared to the actual data. This helps to assess how well the model performs. 
+<p> A variety of charts for visualising the model's accuracy and for further analysis have been created in Looker Studio to make it easy to understand the data and extract valuable insights. Visualisations like age distribution (Figure C) and calories burned by workout type and gender (Figure D) help uncover key insights about gym members and their preferences. The predicted vs actual calories burned (Figure E) chart, compares the model’s predictions compared to the actual data. This helps to assess how well the model performs. <br><br>
 </p>
 
 ![data](images/FigureC.JPG)
 <div align="center">
-    <h4>Figure C: Age Distribution</h4>
+    <h4>Figure C: Age Distribution</h4><br>
 </div>
 
 ![data](images/FigureD.JPG)
 <div align="center">
-    <h4>Figure D:  Calories Burned Calculation based on the Linear Regression Model</h4>
+    <h4>Figure D: Calories Burned by Workout Type and Gender</h4><br>
 </div>
 
 ![data](images/FigureE.JPG)
 <div align="center">
-    <h4>Figure E:  Calories Burned Calculation based on the Linear Regression Model</h4>
+    <h4>Figure E: Predicted vs Actual Calories Burned per Session Duration (Hours)</h4>
 </div>
 <br>
 <p> Each visualisation is designed to be clear and simple to understand, ensuring that even the users with minimal technical knowledge can interpret the data easily. Additionally, interactive filters have been added, allowing users to customise views and explore specific insights based on different variables such as the workout type. These filters offer a more user-tailored experience, allowing them to deep dive into the data according to their needs.
