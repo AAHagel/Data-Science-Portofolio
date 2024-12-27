@@ -1,8 +1,9 @@
 # Data-Science-Portofolio
 
- ![data](images/gym.jpg)
 
 # Gym Performance Insights
+
+ ![data](images/gym.jpg)
 
 ## Heading 2
 
