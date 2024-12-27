@@ -16,7 +16,6 @@
 <h2>Executive Summary, Documentation, Project Report, Impact Evaluation</h2>  
 <br>
 <br>
-
 <p>Reaching fitness goals isn’t just about showing up at the gym. It’s about understanding what workouts and routines are best for each individual. People are unique, and what might work best for one could not work or even harm another. To help gym members improve their performance, it’s important to identify patterns in workout habits and understand how different factors like gender, age, or BMI influence the results. 
 </p>
 <br>
@@ -34,11 +33,11 @@
 <h2>Data Infrastructure & Tools</h2> 
 <br>
 <br
-
+<div>
 <p>In this project, the flow of data is streamlined and it involves a small number of tools used to achieve the desired results (Figure A). The dataset used is a public source which was downloaded from Kaggle and it has 973 records which contain data about individuals' gender,  weight, age, calories burned, and session duration. This file is used as a source for creating a table in BigQuery (BQ). BQ is the main platform used for tabular data storage, cleaning, and analysis. It can process large datasets efficiently and cost-effectively, with active storage at $0.02 per GB per month and querying at $6.25 per TiB. Its powerful SQL functions make it easy to prepare the data, helping to spot NULL values  (e.g., IS NULL, IF NULL) and duplicates at scale (e.g., DISTINCT, ROW_NUMBER), ensuring consistency as the dataset grows.
-![data](images/FigureA.JPG)
 </p>
-
+</div>
+![data](images/FigureA.JPG)
 <br>
 <p>The fact that BQ allows the use of standard SQL for data cleaning and transformations, which is a language widely understood, eliminates the need to know specialised coding and allows data engineers and analysts to work collaboratively. BigQuery ML also offers built-in machine learning models (e.g., model_type='linear_reg', model_type='logistic_reg'), which allow for advanced analysis that produces insights tailored to individual fitness outcomes.</p>
 <br>
