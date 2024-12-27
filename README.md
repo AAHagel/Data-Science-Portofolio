@@ -11,11 +11,9 @@
 
 ![data](images/gym.jpg)
 
-<div align="center">
-  ![data](images/gym.jpg)
-</div>
-| ![data](images/gym.jpg) |
+
 |:------------------------:|
+<img src="![data](images/gym.jpg)" alt="Gym Image" width="200"/>
 
 
 ## Heading 2
