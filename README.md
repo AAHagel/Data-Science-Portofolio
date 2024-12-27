@@ -8,8 +8,9 @@
      <h1>Gym Performance Insights</h1>
     <br><br>
 </div>
-
-![data](images/gym2.jpg)
+<div align="center">
+    <img src="images/gym2.jpg" alt="Gym Image">
+</div>
 
 <br>
 
@@ -36,8 +37,9 @@
 
 <p>In this project, the flow of data is streamlined and it involves a small number of tools used to achieve the desired results (Figure A). The dataset used is a public source which was downloaded from Kaggle and it has 973 records which contain data about individuals' gender,  weight, age, calories burned, and session duration. This file is used as a source for creating a table in BigQuery (BQ). BQ is the main platform used for tabular data storage, cleaning, and analysis. It can process large datasets efficiently and cost-effectively, with active storage at $0.02 per GB per month and querying at $6.25 per TiB. Its powerful SQL functions make it easy to prepare the data, helping to spot NULL values  (e.g., IS NULL, IF NULL) and duplicates at scale (e.g., DISTINCT, ROW_NUMBER), ensuring consistency as the dataset grows.<br><br>
 </p>
-
-![data](images/FigureA.JPG)
+<div align="center">
+    <img src="images/FigureA.JPG" alt="Gym Image">
+</div>
 <div align="center">
     <h4>Figure A: Data Architecture</h4>
 </div>
@@ -88,7 +90,9 @@ the results have considerably improved with an R2  score of 85.40%, indicating t
 <p>With confirmation that the model performs well and based on the calculation for the calories burned (Figure B), the relationship coefficients can be analysed to understand how each factor influences the calories burned. Now that the model can predict the number of calories burned and is based on the relationship coefficients,  it is easy to estimate, for example, the session duration based on the target calorie burn.<br><br>
 </p>
 
-![data](images/FigureB.JPG)
+<div align="center">
+    <img src="images/FigureB.JPG" alt="Gym Image">
+</div>
 <div align="center">
     <h4>Figure B: Calories Burned Calculation based on the Linear Regression Model</h4>
 </div>
@@ -99,18 +103,21 @@ the results have considerably improved with an R2  score of 85.40%, indicating t
 <br>
 <p> A variety of charts for visualising the model's accuracy and for further analysis have been created in Looker Studio to make it easy to understand the data and extract valuable insights. Visualisations like age distribution (Figure C) and calories burned by workout type and gender (Figure D) help uncover key insights about gym members and their preferences. The predicted vs actual calories burned (Figure E) chart, compares the model’s predictions compared to the actual data. This helps to assess how well the model performs. <br><br>
 </p>
-
-![data](images/FigureC.JPG)
 <div align="center">
-    <h4>Figure C: Age Distribution</h4><br>
+    <img src="images/FigureC.JPG" alt="Gym Image">
 </div>
-
-![data](images/FigureD.JPG)
 <div align="center">
-    <h4>Figure D: Calories Burned by Workout Type and Gender</h4><br>
+    <h4>Figure C: Age Distribution</h4><br><br>
 </div>
-
-![data](images/FigureE.JPG)
+<div align="center">
+    <img src="images/FigureD.JPG" alt="Gym Image">
+</div>
+<div align="center">
+    <h4>Figure D: Calories Burned by Workout Type and Gender</h4><br><br>
+</div>
+<div align="center">
+    <img src="images/FigureE.JPG" alt="Gym Image">
+</div>
 <div align="center">
     <h4>Figure E: Predicted vs Actual Calories Burned per Session Duration (Hours)</h4>
 </div>
