@@ -14,6 +14,8 @@
 <div align="center">
   ![data](images/gym.jpg)
 </div>
+| ![data](images/gym.jpg) |
+|:------------------------:|
 
 
 ## Heading 2
