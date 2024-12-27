@@ -9,7 +9,7 @@
 </div>
 <br>
 <br>
-![data](images/gym.jpg)
+![data]([images/gym.jpg](https://github.com/AAHagel/Data-Science-Portofolio/blob/main/images/gym.jpg))
 
 ## Heading 2
 
