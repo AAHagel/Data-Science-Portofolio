@@ -1,5 +1,7 @@
-<h1 style="text-align: center;"> Data-Science-Portofolio </h1>
-   
+<div align="center">
+    <h1>Data-Science-Portofolio</h1>
+</div>
+
 
 
 # Gym Performance Insights
