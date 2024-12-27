@@ -9,6 +9,10 @@
      <h1>Gym Performance Insights</h1>
 </div>
 
+<p align="center">
+  <img src="![data](images/gym.jpg) " alt="Centered Image" />
+</p>
+
 <div align="center">
    ![data](images/gym.jpg) 
 </div>
