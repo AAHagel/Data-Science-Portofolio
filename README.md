@@ -5,10 +5,14 @@
 <br>
 <br>
 
+<div align="center">
+     <h1>Gym Performance Insights</h1>
+</div>
 
-# Gym Performance Insights
-
- ![data](images/gym.jpg)
+<div align="center">
+   ![data](images/gym.jpg) 
+</div>
+ 
 
 ## Heading 2
 
