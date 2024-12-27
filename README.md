@@ -32,7 +32,7 @@
 
 <h2>Data Infrastructure & Tools</h2> 
 <br>
-<br
+<br>
 
 <p>In this project, the flow of data is streamlined and it involves a small number of tools used to achieve the desired results (Figure A). The dataset used is a public source which was downloaded from Kaggle and it has 973 records which contain data about individuals' gender,  weight, age, calories burned, and session duration. This file is used as a source for creating a table in BigQuery (BQ). BQ is the main platform used for tabular data storage, cleaning, and analysis. It can process large datasets efficiently and cost-effectively, with active storage at $0.02 per GB per month and querying at $6.25 per TiB. Its powerful SQL functions make it easy to prepare the data, helping to spot NULL values  (e.g., IS NULL, IF NULL) and duplicates at scale (e.g., DISTINCT, ROW_NUMBER), ensuring consistency as the dataset grows.
 </p>
@@ -49,7 +49,7 @@
 <p>The dataset doesn’t store sensitive data, such as personal identification or names, but access is still provided based on role, this being enforced in BQ, access being a query-only one. This is to prevent any unwanted changes and keep data integrity.</p>
 <br>
 <p>BigQuery and Looker Studio offer an efficient, cost-effective and scalable solution for data storage, analysis, and reporting. This ensures the project can grow and adapt as the dataset evolves.</p>
-<br>
+<br><br>
 
 <h2>Data Engineering</h2>  
 <br>
@@ -60,8 +60,29 @@
 <h3>Extract:</h3>  
 <p>The dataset has been downloaded from Kaggle as a ZIP file. Within the archive, an Excel file containing the gym metrics and dimensions was identified. Since BQ does not directly support Excel, the file was converted to CSV format to create a table in BQ.</p>
 <h3>Load:</h3>  
-<p>The data is then uploaded into BQ by using its functionality to create tables directly from CSV files (Figure B). Once uploaded, the data is now visible in BQ in its original form, and ready for further cleaning and analysis (Figure C). 
+<p>The data is then uploaded into BQ by using its functionality to create tables directly from CSV files. Once uploaded, the data is now visible in BQ in its original form, and ready for further cleaning and analysis. <br>
+</p>
+<h3>Transform:</h3> 
+<p>Once the data is loaded into BQ, it undergoes key transformations for quality and consistency, and a new table is created from the raw data. First, NULL values are handled, with the Gender field being replaced by "Other" where necessary. Invalid values, such as negative entries in the Weight__kg_ field, are converted to NULL. This method is preferred in this case because replacing it with a median could introduce bias as the dataset is relatively small, ensuring that only valid values are analysed in this way.
+</p>
+<p>
+Duplicates are removed using SELECT DISTINCT, ensuring each record is unique. All fields are renamed to keep consistency across naming conventions and descriptions have been added to each of them for a better understanding of what each field represents. A new numeric field is created based on the workout_type dimension to use in the analysis. Additionally, data is validated and normalised, such as ensuring Height__m_ and Calories_Burned follow expected units and ranges.
+</p><br>
+<p>
+Finally, the transformed data is checked to ensure it is now clean and ready for analysis. It has been observed that the same number of records remained after including only records that have age>0 and session_duration_hours>0, which indicates a qualitative dataset.
+</p><br><br>
 
-
-
+<h2>Data Analytics</h2>  
+<br>
+<br>
+<p> As people age, staying in shape becomes more challenging, but making a plan to burn the needed calories to stay in shape, can make the whole process easier. The goal here is to understand how various factors influence calorie burn and overall performance, which will help with creating a personal fitness plan.</p><br>
+<p> 
+	To identify patterns, understand the dataset better, and detect potential issues or biases, an exploratory data analysis (EDA) was conducted. Although the data shows a balance across genders and workout types, there is an underrepresentation of level 3 participants, which could influence the results.
+</p><br>
+<p>Statistical measures like MIN, MAX, MEAN, and standard deviation, applied to numerical fields such as age, and calories burned, help summarise the data. The participants work out on average 3.18 days a week, burning about 905 calories per session, through different intensities of workouts. Weight ranges between 40 kg and 129,9 kg, showing diverse body types. Overall, the data reflects a wide range of fitness levels and habits.
+</p>
+<p>After EDA, linear regression analysis (Google Cloud, n.d.) was chosen to identify the relationships between different factors. Initially, a linear regression model was created using only age, workout type, and calories burned. However, the results were significantly off, with an R2  score of only 2.32%, indicating that the model does not accurately predict the calories burned (Figure N). The issue was how workout_type_code was defined because the model treated the values as ordinal or numeric. This was fixed by using one-hot encoding to represent each workout type as separate categories, ensuring the model treated them correctly.</p><br>
+<p>To improve the model’s accuracy even more, additional factors, such as session duration ( which makes sense because longer workouts mean prolonged effort and, as a consequence, calories burned) and weight ( which makes sense because it is directly linked to calories burned) were included. The linear regression model was recreated with the new variables and 
+the results have considerably improved with an R2  score of 85.40%, indicating that the model is very good at predicting based on the added variables.
+</p><br>
 
