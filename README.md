@@ -10,7 +10,7 @@
 <br>
 ![data](images/gym.jpg)
 <br>
-<br>
+
 
 ## Heading 2
 
